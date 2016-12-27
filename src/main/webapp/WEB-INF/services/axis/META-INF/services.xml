@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+	<service name="SayHello">
+	    <description>axis2 service</description>
+	    <parameter name="ServiceClass">com.ws.helloword.service.SayHello</parameter>
+		<!--新版本的写法-->
+		<parameter name="ServiceObjectSupplier" locked="false">
+			org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+		</parameter>
+
+		<!--这是老版本的写法,新版本的应该用上面的写法-->
+	    <!--<parameter name="ServiceObjectSupplier">-->
+	    	<!--org.apache.axis2.extensions.spring.receivers.SpringAppContextAwareObjectSupplier-->
+	    <!--</parameter>-->
+	    <parameter name="SpringBeanName">SayHello</parameter>
+	
+	    <messageReceivers>
+	        <messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+	        <messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	    </messageReceivers>
+	</service>
+
+</serviceGroup>
