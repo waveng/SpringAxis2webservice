@@ -5,7 +5,7 @@
   <artifactId>com.mjc.webservice</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>com.mjc.webservice Maven Webapp</name>
+  <name>com.com.mjc.webservice Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -89,7 +89,7 @@
 
 
   <build>
-    <finalName>com.mjc.webservice</finalName>
+    <finalName>com.com.mjc.webservice</finalName>
 
       <plugins>
         <plugin>

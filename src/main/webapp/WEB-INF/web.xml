@@ -16,8 +16,6 @@
     <param-value>/WEB-INF/applicationContext-*.xml</param-value>
   </context-param>
 
-
-
   <servlet>
     <servlet-name>AxisServlet</servlet-name>
     <servlet-class>

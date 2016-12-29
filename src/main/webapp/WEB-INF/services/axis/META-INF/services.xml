@@ -2,7 +2,7 @@
 <serviceGroup>
 	<service name="SayHello">
 	    <description>axis2 service</description>
-	    <parameter name="ServiceClass">com.ws.helloword.service.SayHello</parameter>
+	    <parameter name="ServiceClass">com.mjc.ws.helloword.service.SayHello</parameter>
 		<!--新版本的写法-->
 		<parameter name="ServiceObjectSupplier" locked="false">
 			org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier

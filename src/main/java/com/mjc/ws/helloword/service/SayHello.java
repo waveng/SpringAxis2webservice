@@ -1,4 +1,4 @@
-package com.ws.helloword.service;
+package com.mjc.ws.helloword.service;
 
 /**
  * Created by justin-Mao on 16-12-27.
